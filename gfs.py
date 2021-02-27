@@ -67,7 +67,6 @@ def create_repo():
     sh.run('git init')
     sh.run('git add .')
     sh.run('git commit -m "Initial commit"')
-    # sh.run('git branch -M main')
     sh.run('git remote add origin ' + target_url)
     sh.run('git push -fu origin master')
 
