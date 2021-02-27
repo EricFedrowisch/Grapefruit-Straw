@@ -81,7 +81,7 @@ def do_incremental_push(bucket):
     sh.run('git add .')
     sh.run('git commit -am ' + '"Data Bucket ' + str(bucket_n) + '"')
     bucket_n += 1
-    sh.run('git push -fu origin main')
+    sh.run('git push -fu origin master')
 
 
 if __name__ == '__main__':
