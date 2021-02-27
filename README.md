@@ -9,9 +9,12 @@ python3 gfs.py /path/to/repository https://github.com/User/Some.git
 ```
 
 ## Problems
-Probably many. Here are a few.
+Probably many. Here are a few:
 * This was written in python3 on OS X. It might work other places.
-* It makes no attempt to handle authentication. I used GitHub Desktop so this
-doesn't cause a problem for me.
+* It makes no attempt to handle authentication. GitHub Desktop is installed,
+which handles command line authentication for me. And yes, I used it to push it's own project onto GitHub.
 * It uses the force flag on the updates, which means it WILL overwrite whatever
 is on the remote repository. You were warned.
+* It won't even attempt to upload files over 50 MB (that's kinda the point),
+though it will warn you if it finds files too large.
+* It doesn't handle symlinks, shortcuts or aliases.
