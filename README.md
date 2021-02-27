@@ -12,3 +12,5 @@ python3 gfs.py /path/to/repository https://github.com/User/Some.git
 Possibly many. This was written in python3 on OS X. It might work other places.
 -\_O_/-
 Also it makes no attempt to handle authentication.
+It uses the force flag on the updates, which means it WILL overwrite whatever
+is on the remote repository. You were warned.
